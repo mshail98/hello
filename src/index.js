@@ -5,7 +5,7 @@ import App from './App';
 
 
 ReactDOM.render(
-  <h1>hello  i am back in react</h1>,
+  <App/>,
   document.getElementById('root')
 );
 
