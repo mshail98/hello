@@ -2,10 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-
+import {add,sub,mul,div} from './Calc';
 
 ReactDOM.render(
-  <App/>,
+  <>
+  <h1>the sum of two numbers {add(4,8)}</h1>
+  <h1>the sub of two numbers {sub(4,8)}</h1>
+  <h1>the mul of two numbers {mul(4,8)}</h1>
+  <h1>the div of two numbers {div(4,8)}</h1>
+
+  </>,
+
   document.getElementById('root')
 );
 
