@@ -2,17 +2,38 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import {add,sub,mul,div} from './Calc';
+import Card from './Cards';
+import sdata from './Sdata';
+
+console.log(sdata[0]);
+
+
 
 ReactDOM.render(
-  <>
-  <h1>the sum of two numbers {add(4,8)}</h1>
-  <h1>the sub of two numbers {sub(4,8)}</h1>
-  <h1>the mul of two numbers {mul(4,8)}</h1>
-  <h1>the div of two numbers {div(4,8)}</h1>
+ <> 
+ 
+  <Card 
+  imgsrc={sdata[0].imgsrc}
+  title={sdata[0].title}
+  sname={sdata[0].sname}
+  link={sdata[0].link}
+  />,
+  <Card
+   imgsrc={sdata[1].imgsrc}
+   title={sdata[1].title}
+   sname={sdata[1].sname}
+   link={sdata[1].link}
 
+  />
+  <Card
+   imgsrc={sdata[2].imgsrc}
+   title={sdata[2].title}
+   sname={sdata[2].sname}
+   link={sdata[2].link}
+   
+  />
+ 
   </>,
-
   document.getElementById('root')
 );
 
