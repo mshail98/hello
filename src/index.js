@@ -2,38 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Card from './Cards';
-import sdata from './Sdata';
 
-console.log(sdata[0]);
 
 
 
 ReactDOM.render(
- <> 
- 
-  <Card 
-  imgsrc={sdata[0].imgsrc}
-  title={sdata[0].title}
-  sname={sdata[0].sname}
-  link={sdata[0].link}
-  />,
-  <Card
-   imgsrc={sdata[1].imgsrc}
-   title={sdata[1].title}
-   sname={sdata[1].sname}
-   link={sdata[1].link}
-
-  />
-  <Card
-   imgsrc={sdata[2].imgsrc}
-   title={sdata[2].title}
-   sname={sdata[2].sname}
-   link={sdata[2].link}
-   
-  />
- 
-  </>,
+ <App/>,
   document.getElementById('root')
 );
 
